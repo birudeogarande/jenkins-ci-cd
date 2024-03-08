@@ -24,7 +24,7 @@ pipeline {
     post{
         always{
       
-               emailext attachLog: true, body: 'jenkins-cicd - Build #${BUILD_NUMBER} - ${BUILD_STATUS}', replyTo: 'birudeogarande@gmail.com', subject: 'jenkins-cicd - Build #${BUILD_NUMBER} - ${BUILD_STATUS}', to: 'birudeo.garande.bmc@gmail.com'
+               emailext attachLog: true, body: 'JenkinFile-CI-CD - Build #${BUILD_NUMBER} - ${BUILD_STATUS}', replyTo: 'birudeogarande@gmail.com', subject: 'JenkinFile-CI-CD - Build #${BUILD_NUMBER} - ${BUILD_STATUS}', to: 'birudeo.garande.bmc@gmail.com'
             }
         }
 }
